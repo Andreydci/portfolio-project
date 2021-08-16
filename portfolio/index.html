@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Fonts -->
+    <!-- Main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- Barcode font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html, css, web development, websites, web design, andrey shilkov,">
+    <meta name="description" content="portfolio page, presentation page">
+    <meta name="author" content="Andrey Shilkov">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./favicon/icons8-tscheburaschka-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Web development</title>
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <div class="mynavbar">
+        <nav class="navbar navbar-light  fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">---Andrey Shilkov---</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header ">
+                        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Navbar</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#products">Products</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Content
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Carousel -->
+
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="./images/keyboard-4759502_1920.jpg" class="d-block  " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Web Development</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/mobile-phone-1087845_1920.jpg" class="d-block  " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Digital strategy</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/water-366587_1920.jpg" class="d-block  " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Design</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="./images/banner-1557848_1920.jpg" alt="Sds logo">
+        <h1>---ANDREY SHILKOV---</h1>
+    </div>
+
+    <!-- Services -->
+
+    <div class="services">
+        <h2>I create world-class digital products, web development,
+            web design, and branding.</h2>
+
+        <div class="dropdown">
+            <button class="btn btn-link dropdown-toggle d-flex" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Web Development
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                    <p>I am full‑stack design and developer
+                        based in Leipzig provides front‑end and
+                        back‑end development services working closely with
+                        designers. As a UX UI and app developer
+                        , I build native mobile apps for iOS and
+                        Android, web applications, apps for wearables, and
+                        B2B/enterprise software.</p>
+                </li>
+            </ul>
+            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                User Experience
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                    <p>UI/UX design is a defining factor for any digital
+                        product these days. We're a user experience and UI
+                        design agency focused on improving conversion and
+                        increasing customer engagement. Our UI/UX design
+                        capabilities don't stop at mobile apps, web
+                        applications, or multi‑platform digital experiences.
+                        As a UX design agency, we create products and
+                        services that provide outstanding usability while fully
+                        embracing your brand's personality.</p>
+                </li>
+            </ul>
+            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Web Design
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                    <p>We're a web design agency creating next‑level
+                        websites by strategically blending user experience
+                        and brand storytelling. Our web designers and
+                        developers create responsive websites that feel at
+                        home on any device. Product landing pages,
+                        marketing sites, or UX UI for company intranet
+                        portals – we do it all.</p>
+                </li>
+            </ul><button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Branding
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                    <p>A brand today is all about how it makes your
+                        customers feel. It's not a logo, visual identity, or
+                        digital product design. but rather a cohesive system
+                        that spans across all mediums and touchpoints.
+                        We're a branding agency offering a complete
+                        solution from naming and logo design to
+                        communications and style guides.</p>
+                </li>
+            </ul>
+            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Enterprise UX
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                    <p>We're a UI/UX design agency that believes business
+                        software deserves the user‑friendliness and
+                        aesthetics of best‑in‑class consumer apps. We're a
+                        digital agency that transforms legacy enterprise
+                        platforms into delightful, consumer‑grade
+                        experiences and design new B2B products that
+                        people love using.</p>
+                </li>
+            </ul>
+            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Digital Strategy
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                    <p>We start each new digital product design partnership
+                        with an in‑depth discovery phase to immerse
+                        ourselves in your business. Our UX designers
+                        interview stakeholders, conduct user research,
+                        analyze your competition, and consolidate content.
+                        The result is an action plan on executing a holistic
+                        brand and user experience.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- grid -->
+    <div id="products" class="gridclients">
+
+        <div class="clients">
+            <h2>My Clients</h2>
+        </div>
+        <div class="bmw">
+            <img src="./images/logos/bmw-1596080_1920.png" alt="bmw logo">
+            <h2>Bayerische Motoren Werke </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis iure ducimus aperiam quam quod
+                dignissimos fuga debitis, quisquam eius.</p>
+        </div>
+        <div class="porsche">
+            <img src="./images/logos/porsche-1077338_1920.jpg" alt="porsche logo">
+            <h2>Porsche</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ullam deserunt incidunt, quas magni
+                repellat!</p>
+        </div>
+        <div class="facebook">
+            <img src="./images/logos/facebook-76658_1280.png" alt="facebook logo">
+            <h2>Facebook</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium atque laboriosam dicta
+                dolore cum placeat harum suscipit dolorum quae!</p>
+        </div>
+        <div class="twitter">
+            <img src="./images/logos/logo-3491390_1920.png" alt="twitter logo">
+            <h2>Twitter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente expedita pariatur repudiandae.
+                Incidunt odio esse iure aspernatur reiciendis natus repellendus sequi eius nostrum corporis.</p>
+        </div>
+        <div class="cocacola">
+            <img src="./images/logos/box-592366_1920.jpg" alt="coca cola logo">
+            <h2>Coca Cola</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, molestias?</p>
+        </div>
+        <div class="pepsi">
+            <img src="./images/logos/drink-5583101_1920.jpg" alt="pepsi logo">
+            <h2>Pepsi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic praesentium, optio nobis eaque earum quis.
+            </p>
+        </div>
+        <div class="others">
+            <h3>And many others</h3>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <a href="#">Go to main</a>
+        <h6>© 2021 Andrey Shilkov All Rights Reserved</h6>
+        <a href="#">Contact</a>
+    </div>
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
